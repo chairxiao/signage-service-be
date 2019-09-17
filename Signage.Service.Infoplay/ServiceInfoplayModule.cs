@@ -16,6 +16,8 @@ namespace Signage.Service
         public override void PreInitialize()
         {
             IocManager.Register<IBackgroundWorkerManager, BackgroundWorkerManager>();
+            
+            
         }
         public override void Initialize()
         {
@@ -23,10 +25,8 @@ namespace Signage.Service
         }
         public override void PostInitialize()
         {
-
             //注册后台工作者
             var workManager = IocManager.Resolve<IBackgroundWorkerManager>();
-            workManager.Add(IocManager.Resolve<FileDownloadService>());
             workManager.Add(IocManager.Resolve<DownloadService>());
         }
     }
