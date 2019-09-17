@@ -18,8 +18,8 @@ namespace Signage.Service
     [DependsOn(
          typeof(ServiceApplicationModule),
          typeof(ServiceEntityFrameworkModule),
-         typeof(AbpAspNetCoreModule)
-        ,typeof(AbpAspNetCoreSignalRModule)
+         typeof(AbpAspNetCoreModule),
+         typeof(AbpAspNetCoreSignalRModule)
      )]
     public class ServiceWebCoreModule : AbpModule
     {

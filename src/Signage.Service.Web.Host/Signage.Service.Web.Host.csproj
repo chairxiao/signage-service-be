@@ -25,6 +25,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Signage.Service.Infoplay\Signage.Service.Infoplay.csproj" />
     <ProjectReference Include="..\Signage.Service.Web.Core\Signage.Service.Web.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
@@ -46,5 +47,8 @@
     <EmbeddedResource Include="wwwroot\swagger\ui\index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\Logs\" />
   </ItemGroup>
 </Project>

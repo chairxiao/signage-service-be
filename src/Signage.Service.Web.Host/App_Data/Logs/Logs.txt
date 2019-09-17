@@ -1,0 +1,63 @@
+DEBUG 2019-09-17 17:03:00,226 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-09-17 17:03:00,445 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2019-09-17 17:03:00,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Signage.Service.Web.Host.Startup.ServiceWebHostModule, Signage.Service.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,486 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Signage.Service.ServiceWebCoreModule, Signage.Service.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,486 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Signage.Service.ServiceApplicationModule, Signage.Service.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,487 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Signage.Service.ServiceCoreModule, Signage.Service.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,488 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,488 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,488 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,489 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,490 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Signage.Service.EntityFrameworkCore.ServiceEntityFrameworkModule, Signage.Service.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,490 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,491 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,491 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,491 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,492 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,492 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,493 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Signage.Service.ServiceInfoplayModule, Signage.Service.Infoplay, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:00,500 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2019-09-17 17:03:00,626 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-09-17 17:03:00,626 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-09-17 17:03:00,626 [1    ] o.Configuration.LanguageManagementConfig - Converted Service (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-09-17 17:03:00,626 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-09-17 17:03:01,318 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Signage.Service.EntityFrameworkCore.ServiceDbContext, Signage.Service.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-09-17 17:03:02,746 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-09-17 17:03:02,882 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-09-17 17:03:02,955 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-09-17 17:03:02,989 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Service
+DEBUG 2019-09-17 17:03:03,032 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-09-17 17:03:03,296 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-09-17 17:03:03,486 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-09-17 17:03:03,553 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2019-09-17 17:03:03,553 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Signage.Service.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-09-17 17:03:03,564 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Signage.Service.Users.Dto.CreateUserDto
+DEBUG 2019-09-17 17:03:03,564 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Signage.Service.Users.Dto.UserDto
+DEBUG 2019-09-17 17:03:03,565 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Signage.Service.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-09-17 17:03:03,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Signage.Service.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-09-17 17:03:03,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Signage.Service.Roles.Dto.PermissionDto
+DEBUG 2019-09-17 17:03:03,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Signage.Service.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-09-17 17:03:03,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Signage.Service.MultiTenancy.Dto.TenantDto
+DEBUG 2019-09-17 17:03:20,096 [1    ] Signage.Service.DownloadService          - Start background worker: Signage.Service.DownloadService
+INFO  2019-09-17 17:03:24,227 [8    ] Signage.Service.FileDownloadService      - DoWork:1
+INFO  2019-09-17 17:03:26,316 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:21021/  0
+INFO  2019-09-17 17:03:26,316 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2019-09-17 17:03:26,494 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 185.9633ms 200 
+INFO  2019-09-17 17:03:26,875 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Signage.Service.Web.Host.Controllers.HomeController.Index (Signage.Service.Web.Host)'
+INFO  2019-09-17 17:03:29,238 [6    ] Signage.Service.FileDownloadService      - DoWork:2
+INFO  2019-09-17 17:03:34,270 [8    ] Signage.Service.FileDownloadService      - DoWork:3
+INFO  2019-09-17 17:03:38,533 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action Signage.Service.Web.Host.Controllers.HomeController.Index (Signage.Service.Web.Host)
+INFO  2019-09-17 17:03:39,275 [7    ] Signage.Service.FileDownloadService      - DoWork:4
+INFO  2019-09-17 17:03:39,885 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Signage.Service.Web.Host.Controllers.HomeController.Index (Signage.Service.Web.Host) - Validation state: Valid
+INFO  2019-09-17 17:03:39,892 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Signage.Service.Web.Host.Controllers.HomeController.Index (Signage.Service.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 2.6219ms.
+INFO  2019-09-17 17:03:40,503 [4    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-09-17 17:03:40,526 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Signage.Service.Web.Host.Controllers.HomeController.Index (Signage.Service.Web.Host) in 1982.6028ms
+INFO  2019-09-17 17:03:40,530 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Signage.Service.Web.Host.Controllers.HomeController.Index (Signage.Service.Web.Host)'
+INFO  2019-09-17 17:03:40,564 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14253.1836ms 302 
+INFO  2019-09-17 17:03:40,569 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-09-17 17:03:40,939 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 370.6899ms 200 text/html
+INFO  2019-09-17 17:03:43,050 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-09-17 17:03:43,354 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 302.913ms 200 application/json;charset=utf-8
+INFO  2019-09-17 17:03:44,283 [4    ] Signage.Service.FileDownloadService      - DoWork:5
+INFO  2019-09-17 17:03:49,283 [6    ] Signage.Service.FileDownloadService      - DoWork:6
+INFO  2019-09-17 17:03:54,284 [6    ] Signage.Service.FileDownloadService      - DoWork:7

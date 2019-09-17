@@ -7,7 +7,9 @@ using Signage.Service.Configuration;
 namespace Signage.Service.Web.Host.Startup
 {
     [DependsOn(
-       typeof(ServiceWebCoreModule))]
+       typeof(ServiceWebCoreModule),
+       typeof(ServiceInfoplayModule)
+     )]
     public class ServiceWebHostModule: AbpModule
     {
         private readonly IHostingEnvironment _env;
