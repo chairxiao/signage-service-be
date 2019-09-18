@@ -19,8 +19,8 @@ namespace Signage.Service.EntityFrameworkCore
         public override void PreInitialize()
         {
             // add this line to disable transactions for sqlite
-
             Configuration.UnitOfWork.IsTransactional = false;
+
             if (!SkipDbContextRegistration)
             {
                 Configuration.Modules.AbpEfCore().AddDbContext<ServiceDbContext>(options =>
