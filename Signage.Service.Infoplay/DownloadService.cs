@@ -124,9 +124,53 @@ namespace Signage.Service
             return 0;
         }
 
+        private DateTime last_DO_CheckWatcherPathsTime = DateTime.Now.AddDays(-1);
+
         private void DO_CheckWatcherPaths()
         {
+            var ts = DateTime.Now - last_DO_CheckWatcherPathsTime;
+            if (ts.TotalMinutes < 60) return;
+            last_DO_CheckWatcherPathsTime = DateTime.Now;
 
+            Task.Factory.StartNew(() =>
+            {
+
+                foreach (var WatcherPath in _infoplayConfig.WatcherPaths)
+                {
+                    if (Directory.Exists(WatcherPath))
+                    {
+                        DO_CheckWatcherDir(WatcherPath);
+                    }
+                    else
+                    {
+                        DO_CheckWatcherFile(WatcherPath);
+                    }
+                }
+            });
+        }
+        private void DO_CheckWatcherDir(string dirName)
+        {
+            foreach(var dn in Directory.GetDirectories(dirName))
+            {
+                DO_CheckWatcherDir(dn);
+            }
+
+            foreach (var fn in Directory.GetFiles(dirName))
+            {
+                DO_CheckWatcherFile(fn);
+            }
+
+        }
+        private void DO_CheckWatcherFile(string fileName)
+        {
+            var downloadConfigFileName = Path.GetFileName(fileName);
+
+            if (string.Compare(downloadConfigFileName, "downloadConfig.json", true) != 0) return;
+            var keyString = ".program";
+            var programRoot = Path.GetDirectoryName(fileName);
+            if (!programRoot.EndsWith(keyString)) return;
+
+            AddDownloadServiceItem(fileName);
         }
         [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
         private void Watch(string watcherPath)
@@ -185,6 +229,7 @@ namespace Signage.Service
 
         }
 
+     
         private void AddDownloadServiceItem(string downloadConfigFileName)
         {
             var fileName = downloadConfigFileName;
