@@ -23,9 +23,16 @@ namespace Signage.Service
         public override void PreInitialize()
         {
             IocManager.Register<IBackgroundWorkerManager, BackgroundWorkerManager>();
+
             IocManager.Register<InfoplayConfig>();
             var infoplayConfig = IocManager.Resolve<InfoplayConfig>();
             _appConfiguration.GetSection("InfoplayConfig").Bind(infoplayConfig);
+
+
+            IocManager.Register<DownloadServiceConfig>();
+            var downloadServiceConfig = IocManager.Resolve<DownloadServiceConfig>();
+            _appConfiguration.GetSection("DownloadServiceConfig").Bind(downloadServiceConfig);
+            
 
 
         }

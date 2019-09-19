@@ -1,6 +1,7 @@
 ﻿using Abp.Dependency;
 using Castle.Core.Logging;
 using Newtonsoft.Json;
+using Signage.Service.Infoplay;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -253,8 +254,9 @@ namespace Signage.Service
                     dsi = new DownloadServiceItem(di.Uri);
                     downloadServiceItem_Repo.TryAdd(di.Uri, dsi);
                 }
-                dsi.AddSaveFileName(programRoot, di.FileName);
 
+                dsi.AddSaveFile(programRoot, di);
+                var tempFileName=dsi.GetTempFileName();
             }
 
         }
