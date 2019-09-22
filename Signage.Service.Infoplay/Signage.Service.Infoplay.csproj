@@ -14,4 +14,8 @@
     <ProjectReference Include="..\src\Signage.Service.Web.Core\Signage.Service.Web.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,3 @@
+﻿
+- build:
+ scaffold-dbcontext -provider Microsoft.EntityFrameworkCore.SqlServer -connection "Server=10.11.2.82;Database=Infoplay;User=hua;Password=hua637638” -OutputDir Models

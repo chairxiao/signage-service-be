@@ -1,0 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace InfoplayDB.Models
+{
+    public partial class LedControllerType
+    {
+        public int Id { get; set; }
+        public string TypeName { get; set; }
+        public string Note { get; set; }
+    }
+}

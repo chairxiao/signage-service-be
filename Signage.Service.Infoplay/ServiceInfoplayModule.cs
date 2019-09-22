@@ -6,6 +6,7 @@ using Abp.Threading.BackgroundWorkers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Signage.Service.Configuration;
+using Signage.Service.Infoplay;
 
 namespace Signage.Service
 {
@@ -32,9 +33,6 @@ namespace Signage.Service
             IocManager.Register<DownloadServiceConfig>();
             var downloadServiceConfig = IocManager.Resolve<DownloadServiceConfig>();
             _appConfiguration.GetSection("DownloadServiceConfig").Bind(downloadServiceConfig);
-            
-
-
         }
         public override void Initialize()
         {

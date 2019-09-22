@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Signage.Service.Infoplay
+namespace Signage.Service
 {
     /// <summary>
     /// 生成MD5码
