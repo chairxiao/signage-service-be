@@ -88,6 +88,15 @@ namespace Signage.Service.Web.Host.Startup
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            string basePath = _appConfiguration["App:BasePath"];
+            if (!string.IsNullOrEmpty(basePath))
+            {
+                app.Use(async (context, next) =>
+                {
+                    context.Request.PathBase = basePath;
+                    await next.Invoke();
+                });
+            }
             app.UseAbp(options => { options.UseAbpRequestLocalization = false; }); // Initializes ABP framework.
 
             app.UseCors(_defaultCorsPolicyName); // Enable CORS!

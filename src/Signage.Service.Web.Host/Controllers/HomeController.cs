@@ -20,6 +20,8 @@ namespace Signage.Service.Web.Host.Controllers
         public IActionResult Index()
         {
             return Redirect("/swagger");
+            
+
         }
 
         /// <summary>
