@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\InfoplayDB\InfoplayDB.csproj" />
     <ProjectReference Include="..\src\Signage.Service.Web.Core\Signage.Service.Web.Core.csproj" />
   </ItemGroup>
 
