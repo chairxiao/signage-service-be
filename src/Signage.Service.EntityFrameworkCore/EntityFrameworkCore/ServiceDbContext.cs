@@ -3,6 +3,7 @@ using Abp.Zero.EntityFrameworkCore;
 using Signage.Service.Authorization.Roles;
 using Signage.Service.Authorization.Users;
 using Signage.Service.MultiTenancy;
+using Signage.Service.Programs.ProgramType;
 
 namespace Signage.Service.EntityFrameworkCore
 {
@@ -14,5 +15,7 @@ namespace Signage.Service.EntityFrameworkCore
             : base(options)
         {
         }
+        public DbSet<ProgramType> ProgramTypes { get; set; }
+            
     }
 }

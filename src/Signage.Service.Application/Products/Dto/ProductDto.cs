@@ -10,15 +10,15 @@ using System.Text;
 namespace Signage.Service.Products.Dto
 {
     [AutoMapTo(typeof(Product))]
-    class ProductDto: EntityDto, IMustHaveTenant, IMustHaveOrganizationUnit
+    class ProductDto: EntityDto<int>
     {
-        public virtual int TenantId { get; set; }
+        public int TenantId { get; set; }
 
-        public virtual long OrganizationUnitId { get; set; }
+        public  long OrganizationUnitId { get; set; }
 
-        public virtual string Name { get; set; }
+        public  string Name { get; set; }
 
-        public virtual float Price { get; set; }
+        public  float Price { get; set; }
     }
 }
 

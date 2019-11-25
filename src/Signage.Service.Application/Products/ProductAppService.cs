@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 namespace Signage.Service.Products
 {
     //[AbpAuthorize(PermissionNames.Pages_Products)]
-    public class ProductsAppService : AsyncCrudAppService<Product, ProductDto, long>
+    public class ProductsAppService : ServiceAppServiceBase
     {
         //实体仓储，实体继承自IMustHaveOrganizationUnit
         private readonly IRepository<Product> _productRepository;
@@ -30,7 +30,7 @@ namespace Signage.Service.Products
             IRepository<Product> productRepository, 
             IRepository<OrganizationUnit, long> organizationUnitRepository,
             UserManager userManager
-            ) : base(productRepository)
+            )
         {
             _productRepository = productRepository;
             _organizationUnitRepository = organizationUnitRepository;

@@ -18,7 +18,6 @@ namespace Signage.Products
         public virtual float Price { get; set; }
         public Product()
         {
-
         }
 
         public Product(int tenantId, long organizationUnitId, string name, float price)
