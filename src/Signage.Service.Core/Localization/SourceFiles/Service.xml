@@ -2,6 +2,7 @@
 <localizationDictionary culture="en">
   <texts>
     <text name="HomePage" value="Home page" />
+    <text name="Programs" value="Programs" />
     <text name="About" value="About" />
     <text name="WelcomeMessage" value="Welcome to Service!" />
     <text name="FormIsNotValidMessage" value="Form is not valid. Please check and fix errors." />
